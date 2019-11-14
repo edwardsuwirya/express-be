@@ -33,7 +33,7 @@ app.post('/auth/:key', function (req, res) {
         } else {
             res.sendStatus(401);
         }
-    } else {.gitignore
+    } else {
         userPassword = req.body.password;
         userId = req.body.id;
         if (userPassword === 'edo' && userId) {
