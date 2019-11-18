@@ -32,6 +32,7 @@ const UserRouter = Router()
             userPassword = req.body.password;
             userId = req.body.id;
             if (userPassword === 'edo' && userId) {
+                req.session.name = '12345678';
                 res.send({status: 'ok', userId: userId, namaLengkap: 'Eds', alamat: 'Pondok Bambu'})
             } else {
                 res.sendStatus(401);
