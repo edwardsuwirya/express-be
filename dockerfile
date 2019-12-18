@@ -1,6 +1,4 @@
 from node
-
-COPY package*.json ./
-RUN npm install
+WORKDIR /apps
 COPY . .
 ENTRYPOINT ["node","index.js"]
